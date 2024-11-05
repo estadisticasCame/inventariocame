@@ -1,5 +1,5 @@
 import streamlit as st
-import mysql.connector
+import pymysql
 import pandas as pd
 from datetime import datetime, timedelta
 import smtplib
@@ -49,7 +49,7 @@ PROVINCIAS = [
 ]
 
 def init_connection():
-    return mysql.connector.connect(**DB_CONFIG)
+    return pymysql(**DB_CONFIG)
 
 def login():
     st.title("Sistema de gestión de inventario")
