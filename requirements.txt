@@ -9,3 +9,4 @@ os
 load_dotenv
 plotly.express
 plotly.graph_objects
+pymysql
